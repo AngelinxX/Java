@@ -1,0 +1,45 @@
+package com.krakedev;
+
+public class TestProducto {
+
+	public static void main(String[] args) {
+		Producto  productoA = new Producto ();
+		Producto  productoB = new Producto ();
+		Producto  productoC = new Producto ();
+		
+		productoA.nombre = "Papel";
+		productoA.descripcion = "Hojas individual";
+		productoA.precio = 12.24;
+		productoA.stockActual = 15;
+		
+		productoB.nombre = "Engrapadora";
+		productoB.descripcion = "Engrapar hojas";
+		productoB.precio = 23.76;
+		productoB.stockActual = 8;
+		
+		productoC.nombre = "Boligrafo Azul";
+		productoC.descripcion = "Punta fina";
+		productoC.precio = 0.44;
+		productoC.stockActual = 30;
+		
+		System.out.println("nombre: "+productoA.nombre);
+		System.out.println("descripcion: "+productoA.descripcion);
+		System.out.println("precio: "+productoA.precio);
+		System.out.println("stockActual: "+productoA.stockActual);
+		
+		System.out.println("______________");
+		
+		System.out.println("nombre: "+productoB.nombre);
+		System.out.println("descripcion: "+productoB.descripcion);
+		System.out.println("precio: "+productoB.precio);
+		System.out.println("stockActual: "+productoB.stockActual);
+		
+		System.out.println("______________");
+		
+		System.out.println("nombre: "+productoC.nombre);
+		System.out.println("descripcion: "+productoC.descripcion);
+		System.out.println("precio: "+productoC.precio);
+		System.out.println("stockActual: "+productoC.stockActual);
+	}
+
+}
