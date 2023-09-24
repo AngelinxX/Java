@@ -20,7 +20,7 @@ public class TestCalculadora {
 		System.out.println("Resultado Multiplicar: "+resultadoMultiplicar);
 		System.out.println("Resultado Dividir: "+resultadoDividir);
 		System.out.println("Resultado Promediar: "+resultadoPromediar);
-		calcu.mostrarResultado();
+		calcu.resultado();
 	}
 
 }
