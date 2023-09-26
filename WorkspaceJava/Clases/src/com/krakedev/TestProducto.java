@@ -6,6 +6,7 @@ public class TestProducto {
 		Producto  productoA = new Producto ();
 		Producto  productoB = new Producto ();
 		Producto  productoC = new Producto ();
+		Producto  productoD = new Producto ("Curitas","Tratamiento heridas",0.24,35);
 		
 		productoA.setNombre("Parasetamol");
 		productoA.setDescripcion("Medicamento para dolor");
@@ -40,6 +41,13 @@ public class TestProducto {
 		System.out.println("descripcion: "+productoC.getDescripcion());
 		System.out.println("precio: "+productoC.getPrecio());
 		System.out.println("stockActual: "+productoC.getStockActual());
+		
+		System.out.println("______________");
+		
+		System.out.println("nombre: "+productoD.getNombre());
+		System.out.println("descripcion: "+productoD.getDescripcion());
+		System.out.println("precio: "+productoD.getPrecio());
+		System.out.println("stockActual: "+productoD.getStockActual());
 	}
 
 }

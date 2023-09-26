@@ -5,6 +5,13 @@ public class TestAuto {
 	public static void main(String[] args) {
 		Auto  auto1 = new Auto ();
 		Auto  auto2 = new Auto ();
+		Auto  auto3 = new Auto ("Mazda",1998,43567.76);
+		
+		System.out.println("marca: "+auto3.getMarca());
+		System.out.println("anio: "+auto3.getAnio());
+		System.out.println("precio: "+auto3.getPrecio());
+		
+		System.out.println("______________");
 		
 		auto1.setMarca("Chevrolet");
 		auto1.setAnio(1995);
