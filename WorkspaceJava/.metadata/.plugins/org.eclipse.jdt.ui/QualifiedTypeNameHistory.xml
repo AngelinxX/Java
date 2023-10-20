@@ -2,9 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.krakedev.Auto"/>
     <fullyQualifiedTypeName name="com.clearminds.componentes.Producto"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.krakedev.entidades.Naipe"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.krakedev.entidades.Jugadores"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.cmc.evaluacion.Cuota"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.krakedev.herencia.Persona"/>
+    <fullyQualifiedTypeName name="com.krakedev.herencia.Gato"/>
 </qualifiedTypeNameHistroy>
