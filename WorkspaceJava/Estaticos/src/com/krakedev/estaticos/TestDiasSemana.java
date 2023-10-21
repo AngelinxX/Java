@@ -7,7 +7,7 @@ public class TestDiasSemana {
 		int dia = ds.LUNES;
 		System.out.println(dia);*/
 		
-		int dia = DiasSemana.LUNES;
+		int dia = DaySemana.LUNES;
 		System.out.println(dia);
 	}
 
