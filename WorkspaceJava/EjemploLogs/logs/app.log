@@ -1,0 +1,5 @@
+08:38:49.334 [main] INFO  com.krakedev.ejercicios.Admin - Mensaje de info
+08:38:49.339 [main] WARN  com.krakedev.ejercicios.Admin - Mensaje de warn
+08:38:49.339 [main] TRACE com.krakedev.ejercicios.Admin - Mensaje de trace
+08:38:49.339 [main] ERROR com.krakedev.ejercicios.Admin - Mensaje de error
+08:38:49.339 [main] DEBUG com.krakedev.ejercicios.Admin - Mensaje de debug
