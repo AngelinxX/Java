@@ -1649,3 +1649,48 @@
 2023-10-26 06:11:20,566 [Worker-62: Launching TestConexion] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
 2023-10-26 06:11:20,568 [Worker-62: Launching TestConexion] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-10-26 06:11:20,568 [Worker-62: Launching TestConexion] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:09:49,235 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-27 06:15:36,703 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:15:36,705 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:15:36,710 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:15:36,710 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:20:09,384 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:20:09,385 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:20:09,389 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:20:09,389 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:20:35,266 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:20:35,267 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:20:35,273 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:20:35,274 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:23:04,937 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:23:04,938 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:23:04,941 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:23:04,942 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:23:57,015 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:23:57,015 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:23:57,020 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:23:57,020 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:29:16,742 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:29:16,743 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:29:16,746 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:29:16,746 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:31:05,583 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:31:05,583 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:31:05,588 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:31:05,588 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:43:59,095 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:43:59,095 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:43:59,099 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:43:59,100 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:44:00,631 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:00,631 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:44:00,635 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:00,636 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:44:03,952 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:03,953 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:44:03,956 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:03,956 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources
+2023-10-27 06:44:18,009 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:18,009 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\main\resources
+2023-10-27 06:44:18,013 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-27 06:44:18,013 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\af\Java\WorkspaceJava\conexionbdd\src\test\resources

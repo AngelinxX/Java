@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.krakedev.herencia.Persona"/>
     <fullyQualifiedTypeName name="com.krakedev.herencia.Gato"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>
