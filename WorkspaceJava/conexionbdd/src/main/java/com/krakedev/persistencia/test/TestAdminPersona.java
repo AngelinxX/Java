@@ -8,6 +8,7 @@ import com.krakedev.persistencia.entidades.Persona;
 import com.krakedev.persistencia.servicios.AdminPersonas;
 import com.krakedev.persistencia.utils.Convertidor;
 
+//System.out.println solo se va a poder usar en los tests  
 public class TestAdminPersona {
 
 	public static void main(String[] args) {
@@ -23,8 +24,7 @@ public class TestAdminPersona {
 			p.setNumeroHijos(50);
 			AdminPersonas.insertar(p);
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(e.getMessage());
+			System.out.println("error en el sistema: "+e.getMessage());
 		}
 		
 		

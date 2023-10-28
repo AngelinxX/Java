@@ -5,15 +5,21 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Time;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.krakedev.persistencia.entidades.Persona;
 import com.krakedev.persistencia.utils.ConexionBDD;
 
 public class AdminPersonas {
-	public static void insertar (Persona persona) {
+	private static final Logger LOGGER = LogManager.getLogger(AdminPersonas.class);
+
+	public static void insertar(Persona persona) throws Exception {
 		Connection con = null;
 		PreparedStatement ps;
+		LOGGER.trace("Persona a insertar>>> " + persona);
 		try {
-			//abrir la conexion
+			// abrir la conexion
 			con = ConexionBDD.conectar();
 			ps = con.prepareStatement(
 					"insert into personas(cedula,nombre,apellido,estado_civil,estatura,cantidad_ahorrada,numero_hijos,fecha_nacimiento,hora_nacimiento)"
@@ -27,24 +33,209 @@ public class AdminPersonas {
 			ps.setInt(7, persona.getNumeroHijos());
 			ps.setDate(8, new java.sql.Date(persona.getFechaNacimiento().getTime()));
 			ps.setTime(9, new Time(persona.getHoraNacimiento().getTime()));
-			
+
 			ps.executeUpdate();
 
-
 		} catch (Exception e) {
-			// mostrar el error al usuario
-			System.out.println(e.getMessage());
 			// logger el error
-			e.printStackTrace();
-		}finally {
-			//cerrar la conexion
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
 			try {
 				con.close();
 			} catch (SQLException e) {
-				e.printStackTrace();
-				System.out.println("Error de infraestructura");
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
 			}
 		}
-		
+	}
+
+	public static void actualizar(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a actualizar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("UPDATE personas"
+					+ "	SET nombre=?, apellido=?, estado_civil=?, estatura=?, fecha_nacimiento=?, "
+					+ "hora_nacimiento=?, cantidad_ahorrada=?, numero_hijos=?"
+					+ "	WHERE cedula=?");
+
+			ps.setString(1, persona.getNombre());
+			ps.setString(2, persona.getApellido());
+			ps.setString(3, persona.getEstadoCivil().getCodigo());
+			ps.setDouble(4, persona.getEstatura());
+			ps.setDate(5, new java.sql.Date(persona.getFechaNacimiento().getTime()));
+			ps.setTime(6, new Time(persona.getHoraNacimiento().getTime()));
+			ps.setBigDecimal(7, persona.getCantidadAhorrada());
+			ps.setInt(8, persona.getNumeroHijos());		
+			ps.setString(9, persona.getCedula());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
+	}
+	public static void actualizarProducto(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a actualizar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("UPDATE productos"
+					+ "	SET nombre=?, descripcion=?, precio=?, stock=?"
+					+ "	WHERE codigo=?");
+
+			ps.setString(1, persona.getNombre());
+			ps.setString(2, persona.getDescripcion());
+			ps.setBigDecimal(3, persona.getPrecio());
+			ps.setDouble(4, persona.getStock());		
+			ps.setInt(5, persona.getCodigo());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
+	}
+	public static void actualizarTransacciones(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a actualizar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("UPDATE transacciones"
+					+ "	SET numero_cuenta=?, monto=?, tipo=?, fecha=?, hora=?"
+					+ "	WHERE codigo=?");
+
+			ps.setString(1, persona.getNumeroCuenta());
+			ps.setBigDecimal(2, persona.getMonto());
+			ps.setString(3, persona.getTipo());
+			ps.setDate(4, new java.sql.Date(persona.getFecha().getTime()));
+			ps.setTime(5, new Time(persona.getHora().getTime()));
+			
+			ps.setInt(6, persona.getCodigo());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
+	}
+	public static void eliminar(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a eliminar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("delete from personas where cedula = ?");
+
+			ps.setString(1, persona.getCedula());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
+	}
+	public static void eliminarProducto(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a eliminar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("delete from productos where codigo = ?");
+
+			ps.setInt(1, persona.getCodigo());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
+	}
+	public static void eliminarTransaccion(Persona persona) throws Exception {
+		Connection con = null;
+		PreparedStatement ps;
+		LOGGER.trace("Persona a eliminar>>> " + persona);
+		try {
+			// abrir la conexion
+			con = ConexionBDD.conectar();
+			ps = con.prepareStatement("delete from transacciones where codigo = ?");
+
+			ps.setInt(1, persona.getCodigo());
+
+			ps.executeUpdate();
+
+		} catch (Exception e) {
+			// logger el error
+			LOGGER.error("Error al insertar", e);
+			throw new Exception("Error al insertar");
+		} finally {
+			// cerrar la conexion
+			try {
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error("Error con la base de datos", e);
+				throw new Exception("Error con la base de datos");
+			}
+		}
 	}
 }
