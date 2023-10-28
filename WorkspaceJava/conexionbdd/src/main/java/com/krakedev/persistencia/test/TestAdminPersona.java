@@ -26,8 +26,6 @@ public class TestAdminPersona {
 		} catch (Exception e) {
 			System.out.println("error en el sistema: "+e.getMessage());
 		}
-		
-		
 	}
 
 }

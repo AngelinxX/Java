@@ -18,7 +18,7 @@ public class TestConexion {
 		try {
 			Class.forName("org.postgresql.Driver");
 			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres",
-					"Ceydis.159783");
+					"postgres");
 			System.out.println("Conexion exitosa");
 			ps = connection.prepareStatement(
 					"insert into personas(cedula,nombre,apellido,estatura,cantidad_ahorrada,numero_hijos,fecha_nacimiento,hora_nacimiento)"
